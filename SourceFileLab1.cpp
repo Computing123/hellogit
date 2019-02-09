@@ -6,11 +6,11 @@ using namespace std;
 int main()
 {
   //using auto
-  auto char = "A";
+  auto letter = "A";
   auto n= 1;
   auto name= "Family";
   
-  cout << "Char is: " << ch << endl;
+  cout << "Char is: " << letter << endl;
   cout << "Int is: " << n << endl;
   cout << "String is: " << name << endl;
   
@@ -41,7 +41,7 @@ int main()
 
   //strings
   string str1="GoodMorning";
-  string str2= s1 + name;
+  string str2= str1 + name;
   cout << "First string: "<< str1 << endl;
   cout << "Third character of first string: "<< str1[2] << endl;
   cout << "Second string: "<< str2 << endl;
