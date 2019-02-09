@@ -5,35 +5,51 @@ using namespace std;
 
 int main()
 {
-	//use of vectors
-	vector<int> vec;
-	vec.push_back(10);
-	vec.pop_back();
+  //using auto
+  auto char = "A";
+  auto n= 1;
+  auto name= "Family";
+  
+  cout << "Char is: " << ch << endl;
+  cout << "Int is: " << n << endl;
+  cout << "String is: " << name << endl;
+  
+  //using vectors
+  vector<int> vec;
+  vec.push_back(12);
+  vec.pop_back();
+  //using loop for push
+  for (unsigned int i=0; i<5; i++) 
+  {
+   vec.push_back(i);
+  }
+  //printing vector with for loop
+  for(unsigned int a=0; a < vec.size(); a++) 
+  {
+    cout<< "Vector: " << vec[a] << endl;
+  }
+  //using loop for pop
+  for (unsigned int f=0; f<1; f++) 
+  {
+     vec.pop_back();
+  }
+  //loop with auto
+  for (auto vect: vec)
+  {
+    cout << vect << endl;
+  }
 
-	//standard for loop using push
-	for(int i=0; i<4; i++)
- 	{  
-		vec.push_back(i); 
- 	}
-
-	//printing vector using for loop
-	for (inti=0; i<v1.size() ; i++)
-	{  
-	cout<<v1[i]<<" "; 
- 	}
-
-	//strings
-	// declarations
-	string str1="hello";
-	string str2=str1+" world";
-	// printing
-	cout<<"str1 = "<<str1<<endl;
-	cout<<"the 4th character is "<<str1[3]<<endl;
-	cout<<"str1 has "<<str1.size()<<" characters"<<endl;
-
-	//for loop using auto
-	for(auto v: v1 )
-	cout<<v;
-
-	return 0;
-}
+  //strings
+  string str1="GoodMorning";
+  string str2= s1 + name;
+  cout << "First string: "<< str1 << endl;
+  cout << "Third character of first string: "<< str1[2] << endl;
+  cout << "Second string: "<< str2 << endl;
+  cout << "Size of first string: " << str1.size() << endl;
+  
+  if (str1 == "GoodMorning")
+  {
+   cout << "Correct"<<endl;
+  }
+  return 0;
+ }
